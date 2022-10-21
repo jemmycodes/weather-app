@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Weather App</title>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <main
+      class="min-h-screen flex flex-col justify-center space-y-6 items-center"
+    >
+      <section class="bg-darkBlue p-10 rounded-3xl space-y-8">
+        <p class="text-4xl text-shadyWhite font-bold">Simple Weather App</p>
+
+        <section class="flex space-x-5">
+          <input
+            id="location-input"
+            type="text"
+            class="bg-darkBlue border text-shadyWhite border-b-gray border-x-transparent border-t-transparent focus:border-x-transparent active:border-x-transparent placeholder:px-6"
+            placeholder="Search for a city"
+          />
+          <a
+            href="#"
+            id="submit-btn"
+            class="p-3 tracking-widest bg-red text-shadyWhite text-xs rounded-sm uppercase"
+            >Submit</a
+          >
+        </section>
+
+        <!-- Weather Display -->
+        <section>
+          <div class="loader-container">
+            <p class="text-white">
+              Pls hold while the system fetches your data
+            </p>
+            <div class="spinner"></div>
+          </div>
+          <div
+            id="weather-container"
+            class="rounded-3xl bg-white space-y-3 mx-auto p-5 max-w-[15rem]"
+          >
+            <p id="location" class="text-gray">Paris</p>
+            <div class="flex space-x-1">
+              <p id="temperature" class="text-5xl font-bold">9</p>
+              <span class="text-5xl font-bold"> &#8451;</span>
+            </div>
+            <img src="" alt="" id="weatherImg" class="w-20" />
+            <p id="condition" class="uppercase text-gray text-xs">
+              light intensity drizzle
+            </p>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
