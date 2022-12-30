@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  #root {
+    @apply min-h-screen min-w-full bg-gradient-to-r from-bgBlue to-bgLightBlue flex flex-col items-center justify-center px-7 py-8;
+  }
+
+  input {
+    @apply rounded-l-full  w-full bg-transparent outline-none border p-2 px-3 text-white md:w-80;
+  }
+
+  button {
+    @apply bg-white px-5 rounded-r-full;
+  }
+
+  main {
+    @apply flex flex-col w-full gap-5 justify-center items-center;
+  }
+
+  .first-section {
+    @apply text-white items-center gap-5  flex flex-col md:flex-row justify-between md:w-3/5 w-full;
+  }
+
+  figcaption {
+    @apply text-center -ml-3 text-lg;
+  }
+
+  hgroup p {
+    @apply text-center;
+  }
+
+  .later-section {
+    @apply bg-white p-4 rounded-lg flex flex-col gap-7 md:w-3/5 md:max-w-none  max-w-xs w-full;
+  }
+
+  .other-forecast {
+    @apply flex flex-col md:flex-row gap-3 md:justify-between justify-center items-center;
+  }
+
+  hgroup img {
+    @apply w-20;
+  }
+
+  .forecast {
+    @apply space-y-2 md:border px-8 py-4 border-y-transparent border-r-transparent border-gray-300;
+  }
+}
