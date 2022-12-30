@@ -4,8 +4,8 @@ function MainInfo() {
   return (
     <section className="first-section">
       <div className="space-y-2">
-        <p className="font-bold text-2xl">SUN 24</p>
-        <p>Today in Vancouver, BC</p>
+        <p className="font-bold text-2xl text-center">SUN 24</p>
+        <p className="text-center">Today in Vancouver, BC</p>
       </div>
       <div>
         <figure>
@@ -18,7 +18,7 @@ function MainInfo() {
         <figcaption>Moderate Sun</figcaption>
       </div>
       <div className="forecast">
-        <p className="font-bold text-7xl">22</p>
+        <p className="font-bold text-7xl text-center">22</p>
         <p>Feels like 28</p>
       </div>
     </section>
