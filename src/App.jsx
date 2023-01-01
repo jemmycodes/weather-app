@@ -1,13 +1,15 @@
-import SearchInput from "./components/DaysForecast/SearchInput/SearchInput";
-import LaterSection from "./components/LaterForecast/LaterSection";
-import MainInfo from "./components/MainInfo/MainInfo";
+import CurrentWeather from "./components/CurrentWeather/CurrentWeather";
+import ExtendedForeacast from "./components/ExtendedForecast/ExtendedForeacast";
+import Header from "./components/Header/Header";
+import UserInput from "./components/UserInput/UserInput";
 
 function App() {
   return (
     <main>
-      <SearchInput />
-      <MainInfo />
-      <LaterSection />
+      <Header />
+      <UserInput />
+      <CurrentWeather />
+      <ExtendedForeacast />
     </main>
   );
 }
