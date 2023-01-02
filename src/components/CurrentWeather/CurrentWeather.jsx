@@ -1,4 +1,3 @@
-import cloudsImg from "../../assets/cloudy-weather.svg";
 import { ImArrowUp } from "react-icons/im";
 import { ImArrowDown } from "react-icons/im";
 import { BsFillDropletFill } from "react-icons/bs";
@@ -20,6 +19,7 @@ function CurrentWeather() {
           <div className="flex flex-col md:flex-row  gap-14">
             <div className="w-1/2 space-y-2">
               <h3 className="text-xl ">
+                {weatherCtx.weatherData.location.name},{" "}
                 {weatherCtx.weatherData.location.region}
               </h3>
               <figure className="flex items-center gap-5">
