@@ -21,7 +21,7 @@ function WeatherProvider(props) {
   const fetchData = async () => {
     try {
       const response = await fetch(
-        `http://api.weatherapi.com/v1/forecast.json?key=ab2da27635694a1f93b205219230101&q=${coords.latitude},${coords.longitude}&days=7&aqi=no&alerts=no`
+        `https://api.weatherapi.com/v1/forecast.json?key=ab2da27635694a1f93b205219230101&q=${coords.latitude},${coords.longitude}&days=7&aqi=no&alerts=no`
       );
       const data = await response.json();
       console.log(coords);
@@ -36,7 +36,7 @@ function WeatherProvider(props) {
     setIsLoading(true);
 
     const response = await fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=ab2da27635694a1f93b205219230101&q=${input}y&days=7&aqi=no&alerts=no`
+      `https://api.weatherapi.com/v1/forecast.json?key=ab2da27635694a1f93b205219230101&q=${input}y&days=7&aqi=no&alerts=no`
     );
     if (response.ok) {
       const data = await response.json();
