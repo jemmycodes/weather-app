@@ -26,7 +26,7 @@ function WeatherProvider(props) {
     }
     try {
       const response = await fetch(
-        `https://api.weatherapi.com/v1/forecast.json?key=ab2da27635694a1f93b205219230101&q=${coords.latitude},${coords.longitude}&days=7&aqi=no&alerts=no`
+        `https://api.weatherapi.com/v1/forecast.json?key=ab2da27635694a1f93b205219230101&q=4.85,6.97&days=7&aqi=no&alerts=no`
       );
       const data = await response.json();
       console.log(coords);
