@@ -19,6 +19,9 @@ function WeatherProvider(props) {
   const [inputError, setInputError] = useState(false);
 
   const fetchData = async () => {
+    if (coords.latitude === undefined || coords.longitude === undefined) {
+      console.log("undefined");
+    }
     try {
       const response = await fetch(
         `https://api.weatherapi.com/v1/forecast.json?key=ab2da27635694a1f93b205219230101&q=${coords.latitude},${coords.longitude}&days=7&aqi=no&alerts=no`
@@ -28,6 +31,8 @@ function WeatherProvider(props) {
       setWeatherData(data);
       setIsLoading(false);
     } catch (error) {
+      setIsLoading(false);
+
       setLoadError(true);
     }
   };
