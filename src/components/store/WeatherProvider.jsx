@@ -20,7 +20,8 @@ function WeatherProvider(props) {
 
   const fetchData = async () => {
     if (coords.latitude === undefined || coords.longitude === undefined) {
-      console.log("undefined");
+      setLoadError(true);
+      return;
     }
     try {
       const response = await fetch(
