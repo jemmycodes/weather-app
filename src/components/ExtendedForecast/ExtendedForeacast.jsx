@@ -15,6 +15,7 @@ function ExtendedForeacast() {
           <div className="flex gap-5 overflow-x-scroll justify-between">
             {weatherCtx.weatherData.forecast.forecastday.map((data, index) => (
               <Forecast
+                date={data.date}
                 key={index + 75767646}
                 text={data.day.condition.text}
                 icon={data.day.condition.icon}

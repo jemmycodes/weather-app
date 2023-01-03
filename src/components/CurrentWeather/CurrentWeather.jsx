@@ -1,5 +1,3 @@
-import { ImArrowUp } from "react-icons/im";
-import { ImArrowDown } from "react-icons/im";
 import { BsFillDropletFill } from "react-icons/bs";
 import { WiCloudyGusts } from "react-icons/wi";
 import { GoRepoForcePush } from "react-icons/go";
