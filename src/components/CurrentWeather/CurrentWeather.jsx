@@ -8,7 +8,7 @@ import WeatherContext from "../store/weather-context";
 
 function CurrentWeather() {
   const weatherCtx = useContext(WeatherContext);
-  // const { current, location } = weatherCtx.weatherData;
+
   return (
     <Fragment>
       {weatherCtx.weatherData && (
