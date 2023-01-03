@@ -40,20 +40,6 @@ function CurrentWeather() {
                 <p className="text-shadedBlue text-xl mb-2">
                   Feels like {weatherCtx.weatherData.current.feelslike_c}&deg;
                 </p>
-                <div className="flex w-full gap-10 text-xl">
-                  <div className="flex gap-4">
-                    <p>
-                      <ImArrowUp className="text-ashColor" />
-                    </p>
-                    <span>27</span>
-                  </div>
-                  <div className="flex gap-5">
-                    <p>
-                      <ImArrowDown className="text-ashColor" />
-                    </p>
-                    <span>27</span>
-                  </div>
-                </div>
               </div>
               <hgroup>
                 <div>
