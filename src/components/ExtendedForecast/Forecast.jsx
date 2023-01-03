@@ -1,7 +1,5 @@
-import cloudsImg from "../../assets/cloudy-weather.svg";
-
 function Forecast(props) {
-  const dayNames = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
+  const dayNames = ["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"];
   const dt = new Date(props.date);
   const dayOfWeek = dt.getDay();
   const dayName = dayNames[dayOfWeek];
