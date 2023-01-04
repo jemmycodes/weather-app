@@ -38,9 +38,16 @@ function WeatherProvider(props) {
 
   const searchInputHandler = async (input) => {
     setIsLoading(true);
+    console.log("jemmy");
     const response = await fetch(
       `https://api.weatherapi.com/v1/forecast.json?key=8ffc4e32a25843808e6171613230301&q=${input}&days=7&aqi=no&alerts=no`
     );
+    if (!response.ok) {
+      setIsLoading(false);
+      console.log("jemmy");
+      setInputError(true);
+      return;
+    }
     const data = await response.json();
     setWeatherData(data);
     setIsLoading(false);
